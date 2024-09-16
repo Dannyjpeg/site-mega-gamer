@@ -1,0 +1,422 @@
+/* Estilos gerais do body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #ddd;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    background-color: #1c1c1c;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para o menu principal */
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+li {
+    display: inline;
+    margin: 0 15px;
+}
+
+a {
+    color: #f9f9f9;
+    text-decoration: none;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+a:hover {
+    color: #ff4081;
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.store-title {
+    color: #f9f9f9;
+    margin-left: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Estilos para o botão de login */
+.btn-login {
+    background-color: #ff4081;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-login:hover {
+    background-color: #e03c75;
+}
+
+/* Estilos para o menu suspenso */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #1c1c1c;
+    min-width: 160px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content li {
+    display: block;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    display: block;
+    color: #f9f9f9;
+}
+
+.dropdown-content a:hover {
+    background-color: #575757;
+}
+
+/* Estilos para a navsecundaria */
+.navsecundaria {
+    text-align: center;
+    padding: 10px;
+    background-color: #1c1c1c;
+}
+
+.navsecundaria p {
+    margin: 0;
+    color: #f9f9f9;
+}
+
+/* Estilos para o container de login */
+.container-login {
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    margin: 0 auto; /* Alinha o container ao centro horizontalmente */
+}
+
+.container-login img {
+    border-radius: 50%;
+}
+
+.container-login h2 {
+    color: #f9f9f9;
+    margin-bottom: 20px;
+}
+
+.container-login label {
+    display: block;
+    color: #f9f9f9;
+    margin: 10px 0 5px;
+}
+
+.container-login input[type="text"],
+.container-login input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.container-login button {
+    background-color: #ff4081;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.container-login button:hover {
+    background-color: #e03c75;
+}
+
+.container-login p {
+    color: #f9f9f9;
+}
+
+.container-login a {
+    color: #ff4081;
+    text-decoration: none;
+}
+
+.container-login a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para o main */
+main {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para o slider */
+.slider {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+    background: #1c1c1c;
+    padding: 20px;
+}
+
+.slide img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: #fff;
+    font-size: 2rem;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 15px;
+}
+
+.next {
+    right: 15px;
+}
+
+/* Estilos para a seção de cards */
+.cards, .new-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.card, .new-card {
+    background-color: #222;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 220px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card img, .new-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Estilos para a seção de galeria com Flexbox */
+.gallery.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Ajusta o espaçamento entre as imagens */
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.gallery-item {
+    flex: 1 1 200px; /* Ajusta o tamanho das imagens */
+    max-width: 200px;
+    transition: all .3s;
+}
+
+.gallery-item:hover {
+    transform: translateY(-20px);
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para a seção de galeria com CSS Grid */
+.gallery.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta o número de colunas */
+    gap: 20px; /* Ajusta o espaçamento entre as imagens */
+    width: 100%;
+    max-width: 1200px;
+}
+
+.gallery-item img {
+    transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para o footer */
+footer {
+    background-color: #1c1c1c;
+    color: #f9f9f9;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    margin-bottom: 10px;
+    color: #ff4081;
+}
+
+.social-links a {
+    color: #f9f9f9;
+    margin: 0 10px;
+}
+
+.social-links a:hover {
+    color: #ff4081;
+}
+
+/* Linha RGB */
+.rgb-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(90deg, #ff0000, #00ff00, #0000ff);
+    background-size: 600% 100%;
+    animation: rgb-animation 5s linear infinite;
+}
+
+@keyframes rgb-animation {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 0%; }
+}
+
+/* Estilos para a responsividade */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+}
+
+/* Adicionando estilos específicos para o container da galeria */
+.gallery-container {
+    display: flex; /* Ativa o Flexbox */
+    justify-content: space-around; /* Distribui os itens com espaço ao redor */
+    flex-wrap: wrap; /* Permite que os itens quebrem linha se não couberem */
+    padding: 20px;
+    width: 80%;
+    margin: auto; /* Coloca o container para o meio automaticamente */
+}
+
+.gallery-container:hover .gallery-item {
+    opacity: 0.5;
+}
+
+.gallery-container .gallery-item:hover {
+    opacity: 1;
+}
